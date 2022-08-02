@@ -12,6 +12,8 @@
 		4137399D2898DBC400999F5C /* Experience.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 4137399C2898DBC400999F5C /* Experience.rcproject */; };
 		4137399F2898DBC400999F5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4137399E2898DBC400999F5C /* Assets.xcassets */; };
 		413739A22898DBC400999F5C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 413739A12898DBC400999F5C /* Preview Assets.xcassets */; };
+		413739C62898E6AB00999F5C /* FocusEntity in Frameworks */ = {isa = PBXBuildFile; productRef = 413739C52898E6AB00999F5C /* FocusEntity */; };
+		413739C82898EE9000999F5C /* Dice.usdz in Resources */ = {isa = PBXBuildFile; fileRef = 413739C72898EE9000999F5C /* Dice.usdz */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,7 @@
 		4137399C2898DBC400999F5C /* Experience.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = Experience.rcproject; sourceTree = "<group>"; };
 		4137399E2898DBC400999F5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		413739A12898DBC400999F5C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		413739C72898EE9000999F5C /* Dice.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = Dice.usdz; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				413739C62898E6AB00999F5C /* FocusEntity in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 				4137399A2898DBC400999F5C /* ContentView.swift */,
 				4137399C2898DBC400999F5C /* Experience.rcproject */,
 				4137399E2898DBC400999F5C /* Assets.xcassets */,
+				413739C72898EE9000999F5C /* Dice.usdz */,
 				413739A02898DBC400999F5C /* Preview Content */,
 			);
 			path = "test-VR";
@@ -86,6 +91,9 @@
 			dependencies = (
 			);
 			name = "test-VR";
+			packageProductDependencies = (
+				413739C52898E6AB00999F5C /* FocusEntity */,
+			);
 			productName = "test-VR";
 			productReference = 413739952898DBC400999F5C /* test-VR.app */;
 			productType = "com.apple.product-type.application";
@@ -114,6 +122,9 @@
 				Base,
 			);
 			mainGroup = 4137398C2898DBC400999F5C;
+			packageReferences = (
+				413739C42898E6AB00999F5C /* XCRemoteSwiftPackageReference "FocusEntity" */,
+			);
 			productRefGroup = 413739962898DBC400999F5C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -130,6 +141,7 @@
 			files = (
 				413739A22898DBC400999F5C /* Preview Assets.xcassets in Resources */,
 				4137399F2898DBC400999F5C /* Assets.xcassets in Resources */,
+				413739C82898EE9000999F5C /* Dice.usdz in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,13 +286,14 @@
 				DEVELOPMENT_TEAM = X622SX6D57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = hi;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,13 +318,14 @@
 				DEVELOPMENT_TEAM = X622SX6D57;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSCameraUsageDescription = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = hi;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UIRequiredDeviceCapabilities = arkit;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -347,6 +361,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		413739C42898E6AB00999F5C /* XCRemoteSwiftPackageReference "FocusEntity" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/maxxfrazer/FocusEntity";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		413739C52898E6AB00999F5C /* FocusEntity */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 413739C42898E6AB00999F5C /* XCRemoteSwiftPackageReference "FocusEntity" */;
+			productName = FocusEntity;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4137398D2898DBC400999F5C /* Project object */;
 }
